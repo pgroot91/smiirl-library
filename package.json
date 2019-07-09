@@ -1,7 +1,7 @@
 {
-  "name": "smiirl-library",
+  "name": "@smiirl/smiirl-library",
   "version": "1.0.0",
-  "description": "",
+  "description": "Smiirl JS Library",
   "main": "index.js",
   "scripts": {
     "test": "npx mocha --exit test/tests.js",
@@ -9,9 +9,13 @@
     "build": "npx webpack -p",
     "build-cli": "npm run build && npx pkg dist/smiirl -c package.json --out-path dist-cli/"
   },
-  "keywords": ["Smiirl", "Smiirl Library", "Custom"],
+  "keywords": [
+    "Smiirl",
+    "Smiirl Library",
+    "Custom"
+  ],
   "author": "Smiirl",
-  "license": "ISC",
+  "license": "MPL-2.0",
   "dependencies": {
     "axios": "^0.19.0",
     "commander": "^2.20.0"
@@ -41,5 +45,17 @@
       "node10-macos-x64",
       "node10-win-x64"
     ]
-  }
+  },
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smiirl/smiirl-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/smiirl/smiirl-library/issues"
+  },
+  "homepage": "https://github.com/smiirl/smiirl-library#readme"
 }
