@@ -23,7 +23,7 @@ const SmiirlLibrary = require("@smiirl/smiirl-library");
 const smiirlLibrary = new SmiirlLibrary();
 ```
 
-## Fonctions
+## Functions
 
 ### pushnumberOnCounter(mac, token, number)
 
