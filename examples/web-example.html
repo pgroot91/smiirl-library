@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <script src="../dist/web-smiirl.js"></script>
+  </head>
+  <body>
+    <script type="application/javascript">
+      // Load Class
+      var smiirlLibrary = new SmiirlLibrary();
+
+      // Display Number on Counter with Push Method
+      var CounterMac = "";
+      var CounterToken = "";
+      var NumberToDisplay = 12345;
+
+      smiirlLibrary
+        .pushNumberOnCounter(CounterMac, CounterToken, NumberToDisplay)
+        .then(result => {
+          console.log(`${result}`);
+        })
+        .catch(err => {
+          console.log(`Error - ${err.message}`);
+        });
+
+      // Check if JSON URL is good
+      var JSONUrl = "";
+      var Attribute = "";
+
+      smiirlLibrary
+        .verifyJSONUrl(JSONUrl, Attribute)
+        .then(result => {
+          console.log(`${result}`);
+        })
+        .catch(err => {
+          console.log(`Error - ${err.message}`);
+        });
+    </script>
+  </body>
+</html>

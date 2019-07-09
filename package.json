@@ -1,0 +1,45 @@
+{
+  "name": "smiirl-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha --exit test/tests.js",
+    "lint": "npx eslint .",
+    "build": "npx webpack -p",
+    "build-cli": "npm run build && npx pkg dist/smiirl -c package.json --out-path dist-cli/"
+  },
+  "keywords": ["Smiirl", "Smiirl Library", "Custom"],
+  "author": "Smiirl",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "commander": "^2.20.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.2",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.0.1",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.2",
+    "husky": "^3.0.0",
+    "mocha": "^6.1.4",
+    "pkg": "^4.4.0",
+    "prettier": "1.18.2",
+    "regenerator-runtime": "^0.13.2",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5"
+  },
+  "pkg": {
+    "targets": [
+      "node10-linux-x64",
+      "node10-macos-x64",
+      "node10-win-x64"
+    ]
+  }
+}
